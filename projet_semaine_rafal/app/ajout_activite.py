@@ -27,7 +27,7 @@ def ft_ajout_activite():
         nom_activite = st.text_input("Nom de l'activité")
         description = st.text_area("Description")
         duree = st.selectbox("Durée de l'activité", ["Matin", "Apres-midi", "Toute la journee"])
-        date_activite = st.date_input("Date de l'activité", datetime(2024, 8, 10), min_value=datetime(2024, 8, 10), max_value=datetime(2024, 8, 18))
+        date_activite = st.date_input("Date de l'activité", datetime(2024, 8, 11), min_value=datetime(2024, 8, 10), max_value=datetime(2024, 8, 18))
         image = st.file_uploader("Charger une image", type=["png", "jpg", "jpeg"])
         submit_button = st.form_submit_button(label='Créer')
 
